@@ -9,11 +9,37 @@
     "Gruntfile.js",
     "CHANGELOG.md",
     ".travis.yml",
-    "LICENSE"
+    "LICENSE",
+    "**/.*",
+    "bower_components",
+    "test/browser",
+    "tests"
   ],
-  "dependencies": {},
   "devDependencies": {
     "chai": "1.10.0",
     "mocha": "2.1.0"
-  }
+  },
+  "homepage": "https://github.com/michaelBenin/extend-with-super",
+  "authors": [
+    "michaelbenin <michaellouisbenin@gmail.com>"
+  ],
+  "description": "Extend object literals with function properties to have a _super method that references the original function, instead of overwriting it. (No dependencies, but borrowed methods from underscore.js.",
+  "main": "dist/extend-with-super.js",
+  "keywords": [
+    "extend",
+    "super",
+    "_super",
+    "this._super",
+    "this._super()",
+    "inheritance",
+    "object",
+    "literal",
+    "function",
+    "extendWithSuper",
+    "extend-with-super",
+    "underscore",
+    "underscorejs",
+    "plugin"
+  ],
+  "license": "MIT"
 }

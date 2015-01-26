@@ -1,8 +1,7 @@
 # extend-with-super
 
 [![NPM version](https://badge.fury.io/js/extend-with-super.svg)](http://badge.fury.io/js/extend-with-super)
-[![Build Status](https://travis-ci.org/michaelbenin/extend-with-super.svg?branch=master)](https://travis-ci.org/michaelbenin/extend-with-super)
-[![Coverage Status](https://coveralls.io/repos/michaelbenin/extend-with-super/badge.png)](https://coveralls.io/r/michaelbenin/extend-with-super)
+[![Build Status](https://travis-ci.org/michaelBenin/extend-with-super.svg)](https://travis-ci.org/michaelBenin/extend-with-super)[![Coverage Status](https://coveralls.io/repos/michaelbenin/extend-with-super/badge.png)](https://coveralls.io/r/michaelbenin/extend-with-super)
 [![Dependency status](https://david-dm.org/michaelbenin/extend-with-super/status.png)](https://david-dm.org/michaelbenin/extend-with-super#info=dependencies&view=table)
 [![Dev Dependency Status](https://david-dm.org/michaelbenin/extend-with-super/dev-status.png)](https://david-dm.org/michaelbenin/extend-with-super#info=devDependencies&view=table)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
