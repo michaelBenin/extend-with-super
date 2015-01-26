@@ -8,9 +8,6 @@ sudo: false
 install:
   - "npm install"
 
-after_success:
-  - "npm run build"
-
 script:
-  - npm test
+  - "npm run build; npm test"
 
