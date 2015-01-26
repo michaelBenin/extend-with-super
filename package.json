@@ -1,0 +1,61 @@
+{
+  "name": "extend-with-super",
+  "version": "1.0.0",
+  "description": "Extend object literals with function properties to have a _super method that references the original function, instead of overwriting it. (No dependencies, but borrowed methods from underscore.js.",
+  "author":{
+    "name": "Michael Benin",
+    "email": "michaellouisbenin@gmail.com"
+  },
+  "contributors": [],
+  "scripts": {
+    "postinstall": "./node_modules/.bin/bower install",
+    "precommit": "./node_modules/.bin/grunt pre-commit",
+    "test": "./node_modules/.bin/grunt test",
+    "build": "./node_modules/.bin/grunt build"
+  },
+  "main": "lib/extend-with-super.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/michaelbenin/extend-with-super"
+  },
+  "bugs":{
+    "url": "https://github.com/michaelbenin/extend-with-super/issues"
+  },
+  "dependencies": {},
+  "devDependencies": {
+    "bower": "1.3.12",
+    "chai": "1.10.0",
+    "grunt": "0.4.5",
+    "grunt-browserify": "3.2.1",
+    "grunt-cli": "0.1.13",
+    "grunt-contrib-clean": "0.6.0",
+    "grunt-contrib-copy": "0.7.0",
+    "grunt-contrib-jshint": "0.10.0",
+    "grunt-contrib-uglify": "0.5.1",
+    "grunt-jsbeautifier": "0.2.7",
+    "grunt-jscs": "1.0.0",
+    "grunt-jsvalidate": "0.2.2",
+    "grunt-mocha": "0.4.11",
+    "grunt-mocha-test": "0.11.0",
+    "husky": "0.6.2",
+    "load-grunt-tasks": "0.6.0",
+    "time-grunt": "0.4.0"
+  },
+  "tags": [
+    "extend",
+    "super",
+    "_super",
+    "this._super",
+    "this._super()",
+    "inheritance",
+    "object",
+    "literal",
+    "function",
+    "extendWithSuper",
+    "extend-with-super",
+    "underscore",
+    "underscorejs",
+    "plugin"
+  ],
+  "license": "MIT"
+}

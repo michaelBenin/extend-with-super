@@ -1,0 +1,19 @@
+{
+  "name": "extend-with-super",
+  "version": "1.0.0",
+  "ignore": [
+    "lib",
+    "node_modules",
+    "test",
+    ".gitignore",
+    "Gruntfile.js",
+    "CHANGELOG.md",
+    ".travis.yml",
+    "LICENSE"
+  ],
+  "dependencies": {},
+  "devDependencies": {
+    "chai": "1.10.0",
+    "mocha": "2.1.0"
+  }
+}
