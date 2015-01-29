@@ -1,5 +1,11 @@
 # Extend With Super Changelog
 
+### 1.0.2 (January 28, 2015)
+
+* Removed post install script
+* Added codeship badge to Readme.md
+* Tagged 1.0.2
+
 ### 1.0.1 (January 26, 2015)
 
 * Bower.json and README.md updates
