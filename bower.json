@@ -1,6 +1,6 @@
 {
   "name": "extend-with-super",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "ignore": [
     "lib",
     "node_modules",

@@ -1,5 +1,13 @@
 # Extend With Super Changelog
 
+### 1.0.3 (January 28, 2015)
+
+* Added more tests
+* Added resiliency to script for bad arguments
+* Updated readme with usage and contributing
+* Add built files for bower
+* Tagged 1.0.3
+
 ### 1.0.2 (January 28, 2015)
 
 * Removed post install script
