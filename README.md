@@ -5,6 +5,7 @@
 [![Dependency status](https://david-dm.org/michaelbenin/extend-with-super/status.png)](https://david-dm.org/michaelbenin/extend-with-super#info=dependencies&view=table)
 [![Dev Dependency Status](https://david-dm.org/michaelbenin/extend-with-super/dev-status.png)](https://david-dm.org/michaelbenin/extend-with-super#info=devDependencies&view=table)
 [![Built with Grunt](https://cdn.gruntjs.com/builtwith.png)](http://gruntjs.com/)
+[ ![Codeship Status for michaelBenin/extend-with-super](https://codeship.com/projects/980edb90-87e6-0132-1c4e-2af52e5bc1ec/status)](https://codeship.com/projects/59289/)
 
 [![NPM](https://nodei.co/npm/extend-with-super.png?downloads=true&stars=true)](https://nodei.co/npm/extend-with-super/)
 
