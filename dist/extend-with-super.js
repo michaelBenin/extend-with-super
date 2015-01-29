@@ -23,7 +23,13 @@ function makeSuper(sourceProp, objProp) {
   };
 }
 
-function extendWithSuper(obj) {
+function extendWithSuper() {
+
+  var obj = arguments[0];
+
+  if (!obj) {
+    return false;
+  }
 
   if (!isObject(obj)) {
     return obj;
@@ -37,15 +43,18 @@ function extendWithSuper(obj) {
 
     source = arguments[i];
 
-    for (prop in source) {
+    if (isObject(source)) {
 
-      if (hasOwnProperty.call(source, prop)) {
+      for (prop in source) {
 
-        if (isFunction(source[prop]) && isFunction(obj[prop])) {
-          obj[prop] = makeSuper(source[prop], obj[prop]);
-          obj[prop].prototype = source[prop].prototype;
-        } else {
-          obj[prop] = source[prop];
+        if (hasOwnProperty.call(source, prop)) {
+
+          if (isFunction(source[prop]) && isFunction(obj[prop])) {
+            obj[prop] = makeSuper(source[prop], obj[prop]);
+            obj[prop].prototype = source[prop].prototype;
+          } else {
+            obj[prop] = source[prop];
+          }
         }
       }
     }

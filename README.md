@@ -32,7 +32,8 @@ var sampleObj2 = {
   }
 };
 
-var sampleObj3 = extendWithSuper(sampleObj, sampleObj2);
+// Note just like _.extend, only the first argument is modified
+var sampleObj3 = extendWithSuper({}, sampleObj, sampleObj2);
 
 sampleObj3.funcProp(); // Hello World
 
@@ -58,7 +59,7 @@ Commands:
 
 Any contributions must be accompanied with tests.
 
-Make a pull request to master.
+Make a pull request to the develop branch.
 
 Main functionality influenced by underscore.js.
 
