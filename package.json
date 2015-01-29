@@ -1,6 +1,6 @@
 {
   "name": "extend-with-super",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Extend object literals with function properties to have a _super method that references the original function, instead of overwriting it. (No dependencies, but borrowed methods from underscore.js.",
   "author":{
     "name": "Michael Benin",
@@ -8,7 +8,8 @@
   },
   "contributors": [],
   "scripts": {
-    "postinstall": "./node_modules/.bin/bower install",
+    "postinstall": "",
+    "bower": "./node_modules/.bin/bower install",
     "precommit": "./node_modules/.bin/grunt pre-commit",
     "test": "./node_modules/.bin/grunt test",
     "build": "./node_modules/.bin/grunt build"
