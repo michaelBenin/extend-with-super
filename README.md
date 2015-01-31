@@ -11,7 +11,7 @@ Quickstart Example & Description
 // Extend object literals with function properties to have a
 // _super method that references the original function, instead
 // of overwriting it.
-// (No dependencies, but borrowed methods from underscore.js.
+// (No dependencies, but borrowed methods from underscore.js.)
 
 var sampleObj = {
   funcProp: function(){
@@ -49,13 +49,18 @@ In browser weight
 Commands:
 
     npm run build
-    npm run test
+    npm test
+
+Open a github issue for the bug/enhancement discussion.
 
 Any contributions must be accompanied with tests.
 
-Make a pull request to the develop branch.
+Make a pull request to the develop branch referencing the issue.
+
+Please do not introduce any external dependencies.
 
 Main functionality influenced by underscore.js.
+
 
 License MIT
 
