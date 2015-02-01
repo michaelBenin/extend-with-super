@@ -1,5 +1,12 @@
 # Extend With Super Changelog
 
+### 1.0.4 (February 1, 2015)
+
+* Added new badges (appveyor, trending)
+* Added grunt-mocha-cov for coveralls
+* Updated readme with usage and contributing
+* Tagged 1.0.4
+
 ### 1.0.3 (January 28, 2015)
 
 * Added more tests

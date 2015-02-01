@@ -1,6 +1,6 @@
 {
   "name": "extend-with-super",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "ignore": [
     "lib",
     "node_modules",
@@ -23,7 +23,7 @@
   "authors": [
     "michaelbenin <michaellouisbenin@gmail.com>"
   ],
-  "description": "Extend object literals with function properties to have a _super method that references the original function, instead of overwriting it. (No dependencies, but borrowed methods from underscore.js.",
+  "description": "Extend object literals with function properties to have a _super method that references the original function, instead of overwriting it. (No dependencies, but borrowed methods from underscore.js.)",
   "main": "dist/extend-with-super.js",
   "keywords": [
     "extend",
