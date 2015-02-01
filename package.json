@@ -2,7 +2,7 @@
   "name": "extend-with-super",
   "version": "1.0.3",
   "description": "Extend object literals with function properties to have a _super method that references the original function, instead of overwriting it. (No dependencies, but borrowed methods from underscore.js.",
-  "author":{
+  "author": {
     "name": "Michael Benin",
     "email": "michaellouisbenin@gmail.com"
   },
@@ -11,6 +11,7 @@
     "bower": "./node_modules/.bin/bower install",
     "precommit": "./node_modules/.bin/grunt pre-commit",
     "test": "npm run bower; ./node_modules/.bin/grunt test",
+    "coverage": "./node_modules/.bin/grunt mochacov",
     "build": "./node_modules/.bin/grunt build"
   },
   "main": "lib/extend-with-super.js",
@@ -18,7 +19,7 @@
     "type": "git",
     "url": "https://github.com/michaelbenin/extend-with-super"
   },
-  "bugs":{
+  "bugs": {
     "url": "https://github.com/michaelbenin/extend-with-super/issues"
   },
   "dependencies": {},
@@ -36,6 +37,7 @@
     "grunt-jscs": "1.0.0",
     "grunt-jsvalidate": "0.2.2",
     "grunt-mocha": "0.4.11",
+    "grunt-mocha-cov": "^0.3.0",
     "grunt-mocha-test": "0.11.0",
     "husky": "0.6.2",
     "load-grunt-tasks": "0.6.0",
@@ -57,5 +59,12 @@
     "underscorejs",
     "plugin"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "config": {
+    "blanket": {
+      "pattern": [
+        "lib"
+      ]
+    }
+  }
 }

@@ -115,6 +115,15 @@ module.exports = function(grunt) {
           'test/node/**/*-test.js'
         ]
       }
+    },
+
+    mochacov: {
+      options: {
+        coveralls: true
+      },
+      all: [
+        'test/node/**/*-test.js'
+      ]
     }
 
   });
