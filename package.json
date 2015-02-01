@@ -64,6 +64,12 @@
     "blanket": {
       "pattern": [
         "lib"
+      ],
+      "data-cover-never": [
+        "dist",
+        "Gruntfile.js",
+        "node_modules",
+        "test"
       ]
     }
   }
