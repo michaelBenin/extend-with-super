@@ -186,4 +186,25 @@ describe('Extend with super, bad input', function() {
     expect(extendedObj2.notFuncProp).to.equal('should not be testing');
   });
 
+  describe('Extending array of functions test', function() {
+
+    var testArr = [function() {
+      return 'hello';
+    }];
+
+    var test2Arr = [function() {
+      var hello = this._super();
+      return hello + ' world';
+    }];
+
+    var extendedArr = [function() {}];
+
+    var test3Arr = extendWithSuper(extendedArr, testArr, test2Arr);
+
+    it('should extend arrays of functions correctly', function() {
+      expect(test3Arr[0]()).to.equal('hello world');
+    });
+
+  });
+
 });
