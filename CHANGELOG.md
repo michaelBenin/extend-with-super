@@ -1,5 +1,12 @@
 # Extend With Super Changelog
 
+### 1.0.5 (February 8, 2015)
+
+* hasOwnProperty IE8 fix
+* Added array of functions test
+* Updated readme with support
+* Tagged 1.0.5
+
 ### 1.0.4 (February 1, 2015)
 
 * Added new badges (appveyor, trending)
