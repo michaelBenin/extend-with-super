@@ -35,11 +35,19 @@ sampleObj3.funcProp(); // Hello World
 
 ```
 
-## Usage
+## Usage / Support
+
+### On the server/browserify:
 
 CommonJS in npm.
 
+Supported in all versions of node.js/iojs.
+
+### With RequireJS or as Global in browser:
+
 Bower in UMD ~ Global is `extendWithSuper`.
+
+Tests pass in IE9+ - Does not break IE8.
 
 In browser weight
 
