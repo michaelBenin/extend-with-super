@@ -47,7 +47,7 @@ function extendWithSuper() {
 
       for (prop in source) {
 
-        if (hasOwnProperty.call(source, prop)) {
+        if (Object.hasOwnProperty.call(source, prop)) {
 
           if (isFunction(source[prop]) && isFunction(obj[prop])) {
             obj[prop] = makeSuper(source[prop], obj[prop]);
