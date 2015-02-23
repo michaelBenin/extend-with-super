@@ -1,3 +1,5 @@
+var scope = this;
+
 describe('Extend with super: main functionality.', function() {
 
   var testObj = {
@@ -203,6 +205,44 @@ describe('Extend with super, bad input', function() {
 
     it('should extend arrays of functions correctly', function() {
       expect(test3Arr[0]()).to.equal('hello world');
+    });
+
+  });
+
+  describe('Should receive current scope of execution', function() {
+
+    function Super() {}
+
+    extendWithSuper.apply(Super, [Super.prototype, {
+      notFuncProp: 'testing',
+      funcProp: function() {
+        return 'hello';
+      }
+    }, {
+      notFuncProp: 'should not be testing',
+      funcProp: function() {
+        var notFuncProp = this.prototype.notFuncProp;
+        var hello = this._super();
+        return hello + ' world ' + notFuncProp;
+      }
+    }]);
+
+    var super_ = new Super();
+
+    it('should not create the property _super on the created class', function() {
+      expect(super_._super).to.equal(undefined);
+    });
+
+    it('should execute as expected', function() {
+      expect(super_.funcProp()).to.equal('hello world should not be testing');
+    });
+
+  });
+
+  describe('Should not modify the global scope', function() {
+
+    it('should extend arrays of functions correctly', function() {
+      expect(scope._super).to.equal(undefined);
     });
 
   });
