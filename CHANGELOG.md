@@ -1,5 +1,12 @@
 # Extend With Super Changelog
 
+### 2.0.0 (February 28, 2015)
+
+* Updated scope of execution
+* Added tests for scope of execution
+* Added appveyor yml config file
+* Tagged 2.0.0
+
 ### 1.0.5 (February 8, 2015)
 
 * hasOwnProperty IE8 fix
