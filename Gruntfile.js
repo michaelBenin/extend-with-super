@@ -1,8 +1,11 @@
 'use strict';
 
+var version = require('./package.json').version;
+
 module.exports = function(grunt) {
 
   var jsFiles = [
+    'benchmark/**/*.js',
     'lib/**/*.js',
     'test/**/*.js',
     'Gruntfile.js',
@@ -124,6 +127,16 @@ module.exports = function(grunt) {
       all: [
         'test/node/**/*-test.js'
       ]
+    },
+
+    benchmark: {
+      options: {
+        displayResults: true
+      },
+      singleTest: {
+        src: ['benchmark/extend-with-super.js'],
+        dest: 'benchmark/results/extend-with-super.' + version + '.csv'
+      }
     }
 
   });

@@ -3,3 +3,4 @@ node_modules
 test/browser/chai
 test/browser/mocha
 test/browser/extend-with-super.js
+benchmark/results

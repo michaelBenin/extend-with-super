@@ -12,7 +12,8 @@
     "precommit": "./node_modules/.bin/grunt pre-commit",
     "test": "npm run bower; ./node_modules/.bin/grunt test",
     "coverage": "./node_modules/.bin/grunt mochacov",
-    "build": "./node_modules/.bin/grunt build"
+    "build": "./node_modules/.bin/grunt build",
+    "benchmark": "./node_modules/.bin/grunt benchmark"
   },
   "main": "lib/extend-with-super.js",
   "repository": {
@@ -27,6 +28,7 @@
     "bower": "1.3.12",
     "chai": "1.10.0",
     "grunt": "0.4.5",
+    "grunt-benchmark": "0.3.0",
     "grunt-browserify": "3.2.1",
     "grunt-cli": "0.1.13",
     "grunt-contrib-clean": "0.6.0",
@@ -66,6 +68,7 @@
         "lib"
       ],
       "data-cover-never": [
+        "benchmark",
         "dist",
         "Gruntfile.js",
         "node_modules",
